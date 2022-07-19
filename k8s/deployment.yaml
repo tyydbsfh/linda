@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: lindda1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: lindda1
   template:
     metadata:
       labels:
-        app: ray
+        app: lindda1
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/lindda1:latest
+        name: lindda1
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "ab316239-970b-4ded-80e6-ed489382a33d"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl5sdfdg55"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "ab316239-970b-4ded-80e6-ed489382a33d"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm66cvfgfh66"
         - name: Share_Path
           value: "/v2link"
